@@ -4,7 +4,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import { FaMoon } from 'react-icons/fa'
 
 
-function Header() {
+export default function Header() {
   const path = useLocation().pathname;
   return (
     <Navbar className='border-b-2'>
@@ -29,7 +29,7 @@ function Header() {
           <FaMoon />
         </Button>
         <Link to='/sign-in'>
-        <Button gradientDuoTone='purpleToBlue'>
+        <Button gradientDuoTone='purpleToBlue' outline>
           Sign In
         </Button>
         </Link>
@@ -57,4 +57,3 @@ function Header() {
     )
 }
 
-export default Header
